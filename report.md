@@ -154,6 +154,7 @@ In conclusion, the literature demonstrates that automated financial reporting sy
     │
     ├── database/
     │   ├── schema.sql              # MySQL table definitions
+    │   ├── load_csv_to_db.py       # export data to db
     │   └── db_connection.py        # DB connection logic
     │
     ├── pipeline/
@@ -221,4 +222,6 @@ Edited by Aisha (15/04/2026)
 
 3. `database/db.connection.py` --> connect database
 
-4. `database/load_csv_to_db.py` --> load data from `financial_data.csv` to MySQL db.
+4. `database/schema.sql` --> create db schema 
+
+5. `database/load_csv_to_db.py` --> load data from `financial_data.csv` to MySQL db.
