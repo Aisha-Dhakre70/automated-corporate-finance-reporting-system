@@ -3,6 +3,6 @@
 DB_CONFIG = {
     "host": "localhost",
     "user": "root",
-    "password": "szgw_14051",
+    "password": "password",
     "database": "finance_db"
 }
