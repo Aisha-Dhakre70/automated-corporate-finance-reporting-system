@@ -136,4 +136,70 @@ In conclusion, the literature demonstrates that automated financial reporting sy
 [3] Alao, O. B., Dudu, O. F., Alonge, E. O., & Eze, C. E. (2024). Automation in financial reporting: A conceptual framework for efficiency and accuracy  in US corporations. Global Journal of Advanced Research and Reviews, 2(02), 040-050.\
 [4] Werner, M., Wiese, M., & Maas, A. (2021). Embedding process mining into financial statement audits. International Journal of Accounting Information Systems, 41, 100514.\
 [5] Ashraf, M. (2024). Does automation improve financial reporting? Evidence from internal controls. Review of Accounting Studies, 1-44.\
-[6] Barker, R. (2025). Corporate sustainability reporting. Journal of Accounting and Public Policy, 49, 107280.\
+[6] Barker, R. (2025). Corporate sustainability reporting. Journal of Accounting and Public Policy, 49, 107280.
+
+---
+
+## Project Directory Initital Structure
+
+    automated-corporate-financial-reporting-system/
+    │
+    ├── data/
+    │   ├── raw/                    # original dataset
+    │   ├── processed/              # cleaned + transformed data
+    │   └── interim/                # temporary pipeline outputs
+    │
+    ├── database/
+    │   ├── schema.sql              # MySQL table definitions
+    │   └── db_connection.py        # DB connection logic
+    │
+    ├── pipeline/
+    │   ├── extract.py              # incremental data extraction 🔥
+    │   ├── transform.py            # cleaning + preprocessing
+    │   ├── validate.py             # data quality checks 🔥
+    │   ├── load.py                 # store processed data
+    │   ├── analyze.py              # KPIs + aggregations
+    │   ├── anomaly.py              # anomaly detection
+    │   ├── forecast.py             # load model.pkl → predictions
+    │   ├── train_model.py          # train + save model.pkl 🔥
+    │   └── main_pipeline.py        # orchestrator (entry point)
+    │
+    ├── models/
+    │   └── model.pkl               # saved ML model
+    │
+    ├── reporting/
+    │   ├── excel_report.py         # Excel report generation
+    │   └── insights.py             # auto-generated insights 🔥
+    │
+    ├── dashboard/
+    │   ├── app.py                  # Streamlit dashboard
+    │   └── components/             # reusable UI parts (optional)
+    │
+    ├── notebooks/
+    │   ├── eda.ipynb               # data exploration
+    │   └── model_training.ipynb    # initial ML experimentation
+    │
+    ├── automation/
+    │   ├── run_pipeline.bat        # runs pipeline
+    │   └── scheduler_notes.txt     # Task Scheduler setup
+    │
+    ├── logs/
+    │   └── pipeline.log            # execution logs 🔥
+    │
+    ├── config/
+    │   ├── config.py               # paths, constants
+    │   └── db_config.py            # DB credentials
+    │
+    ├── utils/
+    │   ├── logger.py               # logging setup
+    │   └── helpers.py              # common functions
+    │
+    ├── reports/
+    │   └── financial_report.xlsx   # generated reports
+    │
+    ├── metadata/
+    │   └── pipeline_state.json     # last_run_time, last_id 🔥
+    │
+    ├── requirements.txt
+    ├── README.md
+    └── .env                        # environment variables (optional)
