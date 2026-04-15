@@ -144,6 +144,9 @@ In conclusion, the literature demonstrates that automated financial reporting sy
 
     automated-corporate-financial-reporting-system/
     │
+    ├── generate dataset
+    │   └── generate_data.py
+    │
     ├── data/
     │   ├── raw/                    # original dataset
     │   ├── processed/              # cleaned + transformed data
@@ -203,3 +206,15 @@ In conclusion, the literature demonstrates that automated financial reporting sy
     ├── requirements.txt
     └── README.md
     
+---
+
+## Dataset
+
+The dataset was generated using `generate dataset/generate_data.py` and saved inside `data/raw/` as a CSV file. Seasonalities and anomalies were for realism.
+
+Key features included in the dataset are:
+- date
+- revenue
+- expense
+- category (Marketing, Operations, HR, IT)
+- region (East, West, North, South)
