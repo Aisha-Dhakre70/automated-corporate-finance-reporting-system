@@ -20,6 +20,6 @@ def get_engine():
 if __name__ == "__main__":
     engine = get_engine()
     if engine:
-        print("✅ Database connection successful")
+        print("Database connection successful")
     else:
-        print("❌ Database connection failed")
+        print("Database connection failed")
