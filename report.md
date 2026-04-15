@@ -75,3 +75,28 @@
     
     End Goal:
     Not just a reporting tool, but a financial intelligence system that helps analyze performance, detect issues, and support decision-making.
+
+
+---
+    
+    Core Features:
+
+    ✔ ETL pipeline
+    ✔ Excel reporting
+    ✔ Streamlit dashboard
+    ✔ Automation
+    
+    Advanced Features (must-have):
+    
+    ✔ Data validation module
+    ✔ Anomaly detection + highlighting
+    ✔ Forecasting (simple)
+    ✔ Auto-generated insights
+    ✔ Logging + error handling (self-healing lite)
+    ✔ Incremental data processing
+    
+    Optional Fratures (if time):
+    
+    ✔ What-if analysis
+    ✔ Role-based dashboard
+    ✔ Real-time refresh
