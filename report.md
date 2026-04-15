@@ -210,7 +210,7 @@ In conclusion, the literature demonstrates that automated financial reporting sy
 
 ## Dataset
 
-The dataset was generated using `generate dataset/generate_data.py` and saved inside `data/raw/` as a CSV file. Seasonalities and anomalies were for realism.
+The dataset was generated using `generate dataset/generate_data.py` and saved inside `data/raw/` as a CSV file. Seasonalities and anomalies are added for realism.
 
 Key features included in the dataset are:
 - date
