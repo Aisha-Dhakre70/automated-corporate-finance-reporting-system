@@ -211,17 +211,25 @@ In conclusion, the literature demonstrates that automated financial reporting sy
 
 Edited by Aisha (15/04/2026)
 
-1. Create the dataset using `generate dataset/generate_data.py` and saved as `financial_data.csv` inside `data/raw/`. Key features included in the dataset are:
+1. Create the dataset using `generate dataset/generate_data.py` and save as `financial_data.csv` inside `data/raw/`. Key features included in the dataset are:
 - date
 - revenue
 - expense
 - category (Marketing, Operations, HR, IT)
 - region (East, West, North, South)
 
+> Ps. Download the dataset from the repository for now to keep the project consistent.
+
 2. `config/db_config.py` --> configuration for database connection (MySQL)
 
 3. `database/db.connection.py` --> connect database
 
-4. `database/schema.sql` --> create db schema 
+4. `database/schema.sql` --> create db schema named `financial_db` and table `transactions`
 
-5. `database/load_csv_to_db.py` --> load data from `financial_data.csv` to MySQL db.
+5. `database/load_csv_to_db.py` --> import data in MySQL `financial_db` from `financial_data.csv`.
+
+6. `pipeline/extract.py` --> defines extraction of data from SQL by refering to last processed id from metadata file in `metadata` and update the processed id (E)
+
+7. `pipeline/validate.py` --> defines data cleaning + quality checks
+
+8. `pipeline/transform.py` --> performs data validation and feature engineering for new columns: `profit`, `date`, `month`, `year`, and `profit_margin`
