@@ -210,17 +210,6 @@ In conclusion, the literature demonstrates that automated financial reporting sy
 
 Edited by Aisha (15/04/2026)
 
-## Dataset
-
-The dataset was generated using `generate dataset/generate_data.py` and saved inside `data/raw/` as a CSV file. Seasonalities and anomalies are added for realism.
-
-Key features included in the dataset are:
-- date
-- revenue
-- expense
-- category (Marketing, Operations, HR, IT)
-- region (East, West, North, South)
-
 1. Create the dataset using `generate dataset/generate_data.py` and saved as `financial_data.csv` inside `data/raw/`. Key features included in the dataset are:
 - date
 - revenue
