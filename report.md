@@ -154,14 +154,14 @@ In conclusion, the literature demonstrates that automated financial reporting sy
     │   └── db_connection.py        # DB connection logic
     │
     ├── pipeline/
-    │   ├── extract.py              # incremental data extraction 🔥
+    │   ├── extract.py              # incremental data extraction
     │   ├── transform.py            # cleaning + preprocessing
-    │   ├── validate.py             # data quality checks 🔥
+    │   ├── validate.py             # data quality checks
     │   ├── load.py                 # store processed data
     │   ├── analyze.py              # KPIs + aggregations
     │   ├── anomaly.py              # anomaly detection
     │   ├── forecast.py             # load model.pkl → predictions
-    │   ├── train_model.py          # train + save model.pkl 🔥
+    │   ├── train_model.py          # train + save model.pkl
     │   └── main_pipeline.py        # orchestrator (entry point)
     │
     ├── models/
@@ -169,7 +169,7 @@ In conclusion, the literature demonstrates that automated financial reporting sy
     │
     ├── reporting/
     │   ├── excel_report.py         # Excel report generation
-    │   └── insights.py             # auto-generated insights 🔥
+    │   └── insights.py             # auto-generated insights
     │
     ├── dashboard/
     │   ├── app.py                  # Streamlit dashboard
@@ -184,7 +184,7 @@ In conclusion, the literature demonstrates that automated financial reporting sy
     │   └── scheduler_notes.txt     # Task Scheduler setup
     │
     ├── logs/
-    │   └── pipeline.log            # execution logs 🔥
+    │   └── pipeline.log            # execution logs
     │
     ├── config/
     │   ├── config.py               # paths, constants
@@ -198,8 +198,8 @@ In conclusion, the literature demonstrates that automated financial reporting sy
     │   └── financial_report.xlsx   # generated reports
     │
     ├── metadata/
-    │   └── pipeline_state.json     # last_run_time, last_id 🔥
+    │   └── pipeline_state.json     # last_run_time, last_id
     │
     ├── requirements.txt
-    ├── README.md
-    └── .env                        # environment variables (optional)
+    └── README.md
+    
