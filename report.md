@@ -131,9 +131,9 @@ Furthermore, emerging trends such as sustainability reporting and integrated rep
 
 In conclusion, the literature demonstrates that automated financial reporting systems have significantly transformed the field of accounting by improving efficiency, accuracy, and decision-making capabilities. The integration of machine learning, robotic process automation, and self-healing mechanisms has further enhanced the functionality and reliability of these systems. However, challenges related to data quality, system integration, cybersecurity, and workforce adaptation must be addressed to fully realize their potential. Overall, automated financial reporting represents a critical advancement in modern financial management and provides a strong foundation for developing intelligent, scalable, and future-ready financial systems.
 
-[1] Nelson, Jordan & Neels, Mark. (2023). Automated Financial Reporting Systems: A Self- Healing Approach to Ensuring Accuracy and Compliance through Machine Learning. 
-[2] Rakibuzzaman, Tanvir Rahman Akash, Jafrin Reza & Ashraful Alam. (2025). Automated Financial Reporting and Enhancement of Efficiency of Accounts.
-[3] Alao, O. B., Dudu, O. F., Alonge, E. O., & Eze, C. E. (2024). Automation in financial reporting: A conceptual framework for efficiency and accuracy  in US corporations. Global Journal of Advanced Research and Reviews, 2(02), 040-050.
-[4] Werner, M., Wiese, M., & Maas, A. (2021). Embedding process mining into financial statement audits. International Journal of Accounting Information Systems, 41, 100514.
-[5] Ashraf, M. (2024). Does automation improve financial reporting? Evidence from internal controls. Review of Accounting Studies, 1-44.
-[6] Barker, R. (2025). Corporate sustainability reporting. Journal of Accounting and Public Policy, 49, 107280.
+[1] Nelson, Jordan & Neels, Mark. (2023). Automated Financial Reporting Systems: A Self- Healing Approach to Ensuring Accuracy and Compliance through Machine Learning.\
+[2] Rakibuzzaman, Tanvir Rahman Akash, Jafrin Reza & Ashraful Alam. (2025). Automated Financial Reporting and Enhancement of Efficiency of Accounts.\
+[3] Alao, O. B., Dudu, O. F., Alonge, E. O., & Eze, C. E. (2024). Automation in financial reporting: A conceptual framework for efficiency and accuracy  in US corporations. Global Journal of Advanced Research and Reviews, 2(02), 040-050.\
+[4] Werner, M., Wiese, M., & Maas, A. (2021). Embedding process mining into financial statement audits. International Journal of Accounting Information Systems, 41, 100514.\
+[5] Ashraf, M. (2024). Does automation improve financial reporting? Evidence from internal controls. Review of Accounting Studies, 1-44.\
+[6] Barker, R. (2025). Corporate sustainability reporting. Journal of Accounting and Public Policy, 49, 107280.\
