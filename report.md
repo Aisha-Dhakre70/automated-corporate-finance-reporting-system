@@ -250,11 +250,11 @@ Edited by Aisha (16/04/2026)
 
 4. `pipeline/load.py` --> loads the preprocessed data as a CSV file inside `raw\preprocessed\`
 
-5. `reporting\insights.py` --> calculates insights from the data
+5. `reporting/insights.py` --> calculates insights from the data
 
-6. `reporting\excel_report.py` --> creates excel reports from the data and save them inside `reports\`
+6. `reporting/excel_report.py` --> creates excel reports from the data and save them inside `reports\`
 
-7. `pipeline\main_pipeline` --> entry point of the pipeline
+7. `pipeline/main_pipeline` --> entry point of the pipeline
 
 ## Key Insights
 
