@@ -81,19 +81,19 @@
     
     Core Features:
 
-    ✔ ETL pipeline
-    ✔ Excel reporting
+    ✔ ETL pipeline --> done
+    ✔ Excel reporting --> done
     ✔ Streamlit dashboard
     ✔ Automation
     
     Advanced Features (must-have):
     
-    ✔ Data validation module
-    ✔ Anomaly detection + highlighting
+    ✔ Data validation module --> done
+    ✔ Anomaly detection + highlighting --> done
     ✔ Forecasting (simple)
-    ✔ Auto-generated insights
+    ✔ Auto-generated insights --> done
     ✔ Logging + error handling (self-healing lite)
-    ✔ Incremental data processing
+    ✔ Incremental data processing --> done
     
     Optional Fratures (if time):
     
