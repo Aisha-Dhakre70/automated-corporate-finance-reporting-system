@@ -211,6 +211,8 @@ In conclusion, the literature demonstrates that automated financial reporting sy
 
 Edited by Aisha (15/04/2026)
 
+## Files:
+
 1. Create the dataset using `generate dataset/generate_data.py` and save as `financial_data.csv` inside `data/raw/`. Key features included in the dataset are:
 - date
 - revenue
@@ -233,3 +235,31 @@ Edited by Aisha (15/04/2026)
 7. `pipeline/validate.py` --> defines data cleaning + quality checks
 
 8. `pipeline/transform.py` --> performs data validation and feature engineering for new columns: `profit`, `date`, `month`, `year`, and `profit_margin`
+
+---
+
+Edited by Aisha (16/04/20260)
+
+## Files:
+
+1. `notebooks/eda.ipnyb` --> performs eda experimentation
+
+## Key Insights
+
+**1. Revenue Insight:** Revenue shows a consistent upward trend over time, indicating steady growth. Periodic fluctuations suggest the presence of seasonal patterns in business performance.
+
+**2. Expense Insight:** Expenses generally follow the revenue trend but exhibit occasional sharp spikes. These spikes indicate irregular financial activity and highlight potential anomalies.
+
+**3. Profit Insight:** Profit remains positive overall and increases over time, but temporary drops are observed during periods of high expenses. This shows the impact of cost fluctuations on profitability.
+
+**4. Seasonality Insight:** Monthly analysis reveals recurring patterns in revenue, confirming the presence of seasonality. This is critical for forecasting and financial planning.
+
+**5. Category Insight:** Certain categories contribute disproportionately to total expenses, indicating uneven cost distribution. These categories require closer monitoring for cost optimization.
+
+**6. Region Insight:** Financial performance varies across regions, with some regions contributing significantly more to profit. This suggests the need for region-specific strategies.
+
+**7. Anomaly Insight:** Box plot and trend analysis reveal multiple outliers in expense data. These anomalies represent unusual financial events and justify the inclusion of an anomaly detection module in the system.
+
+**8. Distribution Insight:** The expense distribution is slightly skewed due to extreme values, further confirming the presence of outliers in the dataset.
+
+> The exploratory analysis highlights key patterns such as steady revenue growth, seasonal variations, and the presence of anomalous expense spikes. These insights guided the design of the system’s analytical components, including KPI computation and anomaly detection.
