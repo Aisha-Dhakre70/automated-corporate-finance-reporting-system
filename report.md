@@ -244,6 +244,18 @@ Edited by Aisha (16/04/2026)
 
 1. `notebooks/eda.ipnyb` --> performs eda experimentation
 
+2. `pipeline/anomaly.py` --> find anomalies/outliers in the dataset
+
+3. `pipeline/analyze.py` --> performs the analysis on the data to derive KPIs
+
+4. `pipeline/load.py` --> loads the preprocessed data as a CSV file inside `raw\preprocessed\`
+
+5. `reporting\insights.py` --> calculates insights from the data
+
+6. `reporting\excel_report.py` --> creates excel reports from the data and save them inside `reports\`
+
+7. `pipeline\main_pipeline` --> entry point of the pipeline
+
 ## Key Insights
 
 **1. Revenue Insight:** Revenue shows a consistent upward trend over time, indicating steady growth. Periodic fluctuations suggest the presence of seasonal patterns in business performance.
