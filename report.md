@@ -282,4 +282,4 @@ Edited by Aisha (17/04/2026)
 
 Files:
 
-1. `utils/logger.py` --> logs the tasks performed
+1. `utils/logger.py` --> logs the tasks performed and saves the log data inside `logs/`
