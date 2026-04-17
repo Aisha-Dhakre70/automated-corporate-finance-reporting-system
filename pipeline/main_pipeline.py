@@ -7,27 +7,36 @@ from pipeline.load import save_outputs
 from reporting.insights import generate_insights
 from reporting.excel_report import generate_excel_report
 
+from utils.logger import setup_logger
+
+logger = setup_logger()
+
 
 def run_pipeline():
-    df = extract_data()
-    df = transform_data(df)
+    try:
+        logger.info("Pipeline started")
 
-    if df is None:
-        print("[INFO] No new data. Pipeline stopped.")
-        return
+        df = extract_data()
+        df = transform_data(df)
 
-    anomalies = detect_anomalies(df)
+        if df is None:
+            logger.warning("No new data. Pipeline stopped.")
+            return
 
-    kpis, analysis = analyze_data(df, anomalies)
+        anomalies = detect_anomalies(df)
 
-    # Save intermediate outputs
-    save_outputs(df, analysis, anomalies)
+        kpis, analysis = analyze_data(df, anomalies)
 
-    # Generate insights
-    insights = generate_insights(kpis, analysis, anomalies)
+        save_outputs(df, analysis, anomalies)
 
-    # Generate final report
-    generate_excel_report(kpis, analysis, anomalies, insights)
+        insights = generate_insights(kpis, analysis, anomalies)
+
+        generate_excel_report(kpis, analysis, anomalies, insights)
+
+        logger.info("Pipeline completed successfully")
+
+    except Exception as e:
+        logger.error(f"Pipeline failed: {str(e)}")
 
 
 if __name__ == "__main__":
