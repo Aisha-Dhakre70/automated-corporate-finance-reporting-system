@@ -286,4 +286,4 @@ Edited by Aisha (17/04/2026)
 
 ## Changes:
 
-1. Updated `pipeline/anomaly.py` and `pipeline/extract.py` to include logs.
+1. Updated `pipeline/anomaly.py`, `pipeline/extract.py`, and `pipeline/main_pipeline.py` to include logs.
