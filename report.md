@@ -275,3 +275,11 @@ Edited by Aisha (16/04/2026)
 **8. Distribution Insight:** The expense distribution is slightly skewed due to extreme values, further confirming the presence of outliers in the dataset.
 
 > The exploratory analysis highlights key patterns such as steady revenue growth, seasonal variations, and the presence of anomalous expense spikes. These insights guided the design of the system’s analytical components, including KPI computation and anomaly detection.
+
+---
+
+Edited by Aisha (17/04/2026)
+
+Files:
+
+1. `utils/logger.py` --> logs the tasks performed
