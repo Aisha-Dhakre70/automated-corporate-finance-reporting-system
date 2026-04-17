@@ -280,6 +280,10 @@ Edited by Aisha (16/04/2026)
 
 Edited by Aisha (17/04/2026)
 
-Files:
+## Files:
 
 1. `utils/logger.py` --> logs the tasks performed and saves the log data inside `logs/`
+
+## Changes:
+
+1. Updated `pipeline/anomaly.py` and `pipeline/extract.py` to include logs.
