@@ -2,6 +2,7 @@ import pandas as pd
 import json
 import os
 from database.db_connection import get_engine
+from utils.logger import setup_logger
 
 # Metadata file path
 METADATA_PATH = os.path.join("metadata", "pipeline_state.json")
@@ -48,6 +49,9 @@ def extract_data():
         new_last_id = int(df["id"].max())
         update_last_processed_id(new_last_id)
 
+        logger = setup_logger()
+
+        logger.info(f"Extracted {len(df)} records")
         print(f"[INFO] Extracted {len(df)} records")
 
         return df
