@@ -1,4 +1,5 @@
 import pandas as pd
+from utils.logger import setup_logger
 
 # Detect anomalies in expense using IQR method
 def detect_anomalies(df):
@@ -15,7 +16,9 @@ def detect_anomalies(df):
     threshold = Q3 + 1.5 * IQR
 
     anomalies = df[df["expense"] > threshold]
+    logger = setup_logger()
 
+    logger.info(f"Detected {len(anomalies)} anomalies")
     print(f"[INFO] Found {len(anomalies)} anomalies")
 
     return anomalies
