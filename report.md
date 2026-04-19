@@ -305,3 +305,7 @@ The dataset is updated to include extra features. Following files are updated fo
 4. All the python scripts inside `pipeline/`
 
 5. `notebooks/eda.ipnyb`
+
+6. `reporting/insights.py`
+
+7. `reporting/excel_report.py`
