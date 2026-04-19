@@ -287,3 +287,19 @@ Edited by Aisha (17/04/2026)
 ## Changes:
 
 1. Updated `pipeline/anomaly.py`, `pipeline/extract.py`, and `pipeline/main_pipeline.py` to include logs.
+
+---
+
+Edited by Aisha (19/04/2026)
+
+## Updates:
+
+The dataset is updated to include extra features. Following files are updated for the same purpose:
+
+1. `generate dataset/generate_data.py`
+
+2. `database/schema.sql`
+
+3. All the python scripts inside `pipeline/`
+
+4. `notebooks/eda.ipnyb`
