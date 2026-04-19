@@ -300,6 +300,8 @@ The dataset is updated to include extra features. Following files are updated fo
 
 2. `database/schema.sql`
 
-3. All the python scripts inside `pipeline/`
+3. `database/load_csv_to_db.py`
 
-4. `notebooks/eda.ipnyb`
+4. All the python scripts inside `pipeline/`
+
+5. `notebooks/eda.ipnyb`
