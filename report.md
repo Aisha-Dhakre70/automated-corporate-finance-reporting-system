@@ -323,3 +323,7 @@ Edited by Aisha (20/04/2026)
 ## Updated
 
 Windows Scheduler
+
+> Note for other members:
+> Add `notebooks/model_training.ipnyb`, `pipeline/train_model.py`, `pipeline/forecast.py`, and `models/model.pkl` as an add on feature. Edit literature survey and start preparing report.
+> Aisha: Working on Streamlit.
