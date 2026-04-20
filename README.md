@@ -40,6 +40,7 @@ Create the file: `automation/run_pipeline.bat`
 ### Step 4: Advanced Settings
 After creating the task:
 - Right-click → Properties
+
 ✅ General Tab\
 Enable: Run whether user is logged in or not
 
