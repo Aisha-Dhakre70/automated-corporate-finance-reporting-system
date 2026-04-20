@@ -309,3 +309,15 @@ The dataset is updated to include extra features ncluding `comapny`, `cogs`, `gr
 6. `reporting/insights.py`
 
 7. `reporting/excel_report.py`
+
+---
+
+Edited by Aisha (20/04/2026)
+
+## Files
+
+1. `automation/run_pipeline.bat` --> automated the pipeline
+
+## Updated
+
+Windows Scheduler
