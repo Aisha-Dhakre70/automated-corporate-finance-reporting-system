@@ -52,6 +52,6 @@ Enable:
 - Wake the computer to run this task
 
 ✅ Settings Tab\
-Enable:\
+Enable:
 - Run task as soon as possible after a scheduled start is missed
 - If task fails, restart every (e.g., 5 minutes)
