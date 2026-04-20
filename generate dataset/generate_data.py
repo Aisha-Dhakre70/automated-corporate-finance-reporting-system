@@ -3,57 +3,138 @@ import numpy as np
 from datetime import datetime, timedelta
 import random
 
-# CONFIGURE 2 YEARS OF DATA
-num_days = 730   # 2 years of data
-start_date = datetime(2023, 1, 1)
+# ---------------- CONFIG ----------------
+NUM_DAYS = 730
+START_DATE = datetime(2023, 1, 1)
 
-categories = ["Marketing", "Operations", "HR", "IT"]
-regions = ["North", "South", "East", "West"]
+COMPANIES = ["AlphaCorp", "BetaLtd", "GammaInc"]
+CATEGORIES = ["Marketing", "Operations", "HR", "IT"]
+REGIONS = ["North", "South", "East", "West"]
 
-# GENERATE DATA
+# Category impact
+CATEGORY_REVENUE_FACTOR = {
+    "Marketing": 1.2,
+    "Operations": 1.0,
+    "HR": 0.8,
+    "IT": 1.1
+}
+
+CATEGORY_EXPENSE_RANGE = {
+    "Marketing": (0.7, 1.2),
+    "Operations": (0.6, 1.0),
+    "HR": (0.4, 0.8),
+    "IT": (0.5, 0.9)
+}
+
+# Region impact
+REGION_REVENUE_FACTOR = {
+    "North": 1.1,
+    "South": 0.95,
+    "East": 1.0,
+    "West": 1.2
+}
+
+REGION_COST_FACTOR = {
+    "North": 1.05,
+    "South": 0.9,
+    "East": 1.0,
+    "West": 1.15
+}
+
+# ---------------- DATA GENERATION ----------------
 data = []
 
-for i in range(num_days):
-    date = start_date + timedelta(days=i)
+for company in COMPANIES:
 
-    # Trend (growth over time)
-    trend = 1000 + i * 2  
+    # Company-specific growth behavior
+    base_growth = random.uniform(1.5, 3.0)
 
-    # Seasonality (monthly pattern)
-    month_factor = 1 + 0.2 * np.sin(2 * np.pi * date.month / 12)
+    for i in range(NUM_DAYS):
+        date = START_DATE + timedelta(days=i)
 
-    # Random noise
-    noise = np.random.normal(0, 100)
+        # -------- Base Revenue Model --------
+        trend = 1000 + i * base_growth
 
-    # Revenue
-    revenue = trend * month_factor + noise
-    revenue = max(revenue, 200)  # avoid negative
+        seasonality = 1 + 0.2 * np.sin(2 * np.pi * date.month / 12)
 
-    # Expense base
-    expense = revenue * random.uniform(0.5, 0.9)
+        noise = np.random.normal(0, 120)
 
-    # Inject anomalies (rare spikes)
-    if random.random() < 0.03:  # 3% chance
-        expense *= random.uniform(1.5, 2.5)
+        revenue = trend * seasonality + noise
 
-    category = random.choice(categories)
-    region = random.choice(regions)
+        # Occasional downturns (market shocks)
+        if random.random() < 0.1:
+            revenue *= random.uniform(0.7, 0.9)
 
-    data.append([
-        date.strftime("%Y-%m-%d"),
-        round(revenue, 2),
-        round(expense, 2),
-        category,
-        region
-    ])
+        revenue = max(revenue, 200)
 
-# CREATE DATAFRAME
+        # -------- Assign Business Dimensions --------
+        category = random.choice(CATEGORIES)
+        region = random.choice(REGIONS)
+
+        # Apply category + region effects on revenue
+        revenue *= CATEGORY_REVENUE_FACTOR[category]
+        revenue *= REGION_REVENUE_FACTOR[region]
+
+        # -------- Expense Modeling --------
+        low, high = CATEGORY_EXPENSE_RANGE[category]
+        expense = revenue * random.uniform(low, high)
+
+        # Region affects cost structure
+        expense *= REGION_COST_FACTOR[region]
+
+        # Category-specific anomaly (e.g., marketing overspend)
+        if category == "Marketing" and random.random() < 0.1:
+            expense *= random.uniform(1.5, 2.0)
+
+        # General anomaly (unexpected spike)
+        if random.random() < 0.03:
+            expense *= random.uniform(1.5, 2.5)
+
+        # -------- Financial Layers --------
+        cogs = expense * random.uniform(0.5, 0.7)
+        gross_profit = revenue - cogs
+
+        operating_expense = expense * random.uniform(0.2, 0.4)
+        operating_profit = gross_profit - operating_expense
+
+        net_profit = operating_profit - random.uniform(50, 150)
+
+        # -------- Region-specific volatility --------
+        if region == "West" and random.random() < 0.15:
+            net_profit *= random.uniform(0.6, 0.85)
+
+        # -------- Append Row --------
+        data.append([
+            company,
+            date.strftime("%Y-%m-%d"),
+            round(revenue, 2),
+            round(expense, 2),
+            round(cogs, 2),
+            round(gross_profit, 2),
+            round(operating_profit, 2),
+            round(net_profit, 2),
+            category,
+            region
+        ])
+
+# ---------------- DATAFRAME ----------------
 df = pd.DataFrame(data, columns=[
-    "date", "revenue", "expense", "category", "region"
+    "company",
+    "date",
+    "revenue",
+    "expense",
+    "cogs",
+    "gross_profit",
+    "operating_profit",
+    "net_profit",
+    "category",
+    "region"
 ])
 
-# SAVE DATASET
-df.to_csv("data/raw/financial_data.csv", index=False)
+# ---------------- SAVE ----------------
+output_path = "data/raw/financial_data.csv"
+df.to_csv(output_path, index=False)
 
 print("Dataset generated successfully!")
+print(f"Saved to: {output_path}")
 print(df.head())
