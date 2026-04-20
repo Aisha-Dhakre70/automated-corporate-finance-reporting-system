@@ -318,6 +318,8 @@ Edited by Aisha (20/04/2026)
 
 1. `automation/run_pipeline.bat` --> automated the pipeline
 
+2. `scheduler_notes.txt` --> instructions for automation
+
 ## Updated
 
 Windows Scheduler
