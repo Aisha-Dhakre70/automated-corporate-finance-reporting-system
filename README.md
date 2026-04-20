@@ -8,8 +8,13 @@ This end-to-end system automatically collects financial data (sales, expenses, t
 The dataset was generated using `generate dataset/generate_data.py` and saved inside `data/raw/` as a CSV file. Seasonalities and anomalies are added for realism.
 
 Key features included in the dataset are:
+- comapny
 - date
 - revenue
 - expense
+- cogs
+- gross_profit
+- operation_profit
+- net_profit
 - category (Marketing, Operations, HR, IT)
 - region (East, West, North, South)
