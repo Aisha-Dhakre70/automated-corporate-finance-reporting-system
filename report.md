@@ -294,7 +294,7 @@ Edited by Aisha (19/04/2026)
 
 ## Updates:
 
-The dataset is updated to include extra features. Following files are updated for the same purpose:
+The dataset is updated to include extra features ncluding `comapny`, `cogs`, `gross_profit`, `net_profit`, `operation_profit`. Following files are updated for the same purpose:
 
 1. `generate dataset/generate_data.py`
 
