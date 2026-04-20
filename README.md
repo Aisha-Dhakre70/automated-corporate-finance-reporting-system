@@ -41,13 +41,16 @@ Create the file: `automation/run_pipeline.bat`
 After creating the task:
 - Right-click → Properties
 ✅ General Tab\
-Enable: Run whether user is logged in or not\
+Enable: Run whether user is logged in or not
+
 ✅ Triggers Tab\
 Edit trigger → enable:\
-Repeat task every (optional)\
+Repeat task every (optional)
+
 ✅ Conditions Tab\
 Enable:
 - Wake the computer to run this task
+
 ✅ Settings Tab\
 Enable:\
 - Run task as soon as possible after a scheduled start is missed
