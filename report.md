@@ -340,6 +340,8 @@ Edited by Aisha (21/04/2024)
 
 5. `dashboard/pages/reports.py`
 
+6. `utils/helper.py` --> apply style function for dashboard pages
+
 
 > Note for other members:
 > Add `notebooks/model_training.ipnyb`, `pipeline/train_model.py`, `pipeline/forecast.py`, and `models/model.pkl` as an add on feature. Edit literature survey and start preparing report.
