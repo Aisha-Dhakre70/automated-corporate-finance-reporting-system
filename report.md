@@ -1,3 +1,13 @@
+> ## Note for other members:
+> 
+> The automated reporting system is built. The only thiing left now is to test and debug the system, and making UI pretty if possible.
+>
+> To add prediction system as a plus for the project, if you want to, add `notebooks/model_training.ipnyb`, `pipeline/train_model.py`, `pipeline/forecast.py`, and `models/model.pkl` as an add on feature.
+>
+> **IMPORTANT**: Edit literature survey and start preparing report.
+    
+    
+    
     Project: Automated Corporate Finance Reporting System (Final-Year Level)
     
     Core Idea:
@@ -341,8 +351,3 @@ Edited by Aisha (21/04/2024)
 5. `dashboard/pages/reports.py`
 
 6. `utils/helper.py` --> apply style function for dashboard pages
-
-
-> Note for other members:
-> Add `notebooks/model_training.ipnyb`, `pipeline/train_model.py`, `pipeline/forecast.py`, and `models/model.pkl` as an add on feature. Edit literature survey and start preparing report.
-> Aisha: Working on Streamlit.
