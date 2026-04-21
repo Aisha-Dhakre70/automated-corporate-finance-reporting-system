@@ -326,9 +326,19 @@ Windows Scheduler
 
 ---
 
+Edited by Aisha (21/04/2024)
+
 ## Files:
 
 1. `dahsboard/app.py` --> streamlit UI Dashboard
+
+2. `app.py` --> Updated `app.py` to multipage dashboard
+
+3. `dashboard/pages/overview.py`
+
+4. `dashboard/pages/insights.py`
+
+5. `dashboard/pages/report.py`
 
 
 > Note for other members:
