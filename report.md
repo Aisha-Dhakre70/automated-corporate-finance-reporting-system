@@ -338,7 +338,7 @@ Edited by Aisha (21/04/2024)
 
 4. `dashboard/pages/insights.py`
 
-5. `dashboard/pages/report.py`
+5. `dashboard/pages/reports.py`
 
 
 > Note for other members:
