@@ -304,7 +304,7 @@ Edited by Aisha (19/04/2026)
 
 ## Updates:
 
-The dataset is updated to include extra features ncluding `comapny`, `cogs`, `gross_profit`, `net_profit`, `operation_profit`. Following files are updated for the same purpose:
+The dataset is updated to include extra features including `company`, `cogs`, `gross_profit`, `net_profit`, `operation_profit`. Following files are updated for the same purpose:
 
 1. `generate dataset/generate_data.py`
 
@@ -319,6 +319,21 @@ The dataset is updated to include extra features ncluding `comapny`, `cogs`, `gr
 6. `reporting/insights.py`
 
 7. `reporting/excel_report.py`
+
+## Final Insights and Recommendations
+Based on the analysis, the following key conclusions can be drawn:
+
+- The business is experiencing steady revenue growth.
+- However, profitability is constrained by high operational and marketing expenses.
+- Certain regions generate high revenue but suffer from low efficiency.
+- Cost control has a significantly greater impact on profit than revenue growth.
+- Efficient regions demonstrate that better cost management can improve profitability.
+
+### Recommendations:
+- Optimize costs in high-revenue but low-profit regions.
+- Re-evaluate marketing strategies to improve return on investment.
+- Implement monitoring systems to detect and control high-risk transactions.
+- Replicate best practices from high-performing regions across the business.
 
 ---
 
