@@ -93,16 +93,16 @@
 
     ✔ ETL pipeline --> done
     ✔ Excel reporting --> done
-    ✔ Streamlit dashboard
-    ✔ Automation
+    ✔ Streamlit dashboard --> done
+    ✔ Automation --> done
     
     Advanced Features (must-have):
     
     ✔ Data validation module --> done
     ✔ Anomaly detection + highlighting --> done
-    ✔ Forecasting (simple)
+    ✔ Forecasting (simple) --> add-on (not done)
     ✔ Auto-generated insights --> done
-    ✔ Logging + error handling (self-healing lite)
+    ✔ Logging + error handling (self-healing lite) --> done
     ✔ Incremental data processing --> done
     
     Optional Fratures (if time):
