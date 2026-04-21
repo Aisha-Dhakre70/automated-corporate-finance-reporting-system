@@ -1,6 +1,6 @@
 > ## Note for other members:
 > 
-> The automated reporting system is built. The only thiing left now is to test and debug the system, and making UI pretty if possible.
+> The automated reporting system is built. The only thing left now is to test and debug the system, and making UI pretty if possible.
 >
 > To add prediction system as a plus for the project, if you want to, add `notebooks/model_training.ipnyb`, `pipeline/train_model.py`, `pipeline/forecast.py`, and `models/model.pkl` as an add on feature.
 >
