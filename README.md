@@ -409,3 +409,20 @@ streamlit run app.py
 - MySQL
 - Logging & Monitoring
 - Workflow Automation
+
+---
+
+## 👩‍💻 Author
+
+### Aisha Dhakre
+
+Passionate about transforming data into actionable insights through Data Analytics, Data Engineering, Business Intelligence, and Machine Learning.
+
+#### Connect with Me
+
+- GitHub: https://github.com/Aisha-Dhakre70
+- LinkedIn: https://www.linkedin.com/in/aisha-dhakre-030798270/
+- Email: dhakreaisha@gmail.com
+
+---
+⭐ If you found this project useful, consider giving it a star!
