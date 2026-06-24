@@ -1,4 +1,4 @@
-# 📊 Automated Corporate Financial Reporting System
+# 📊 Automated Corporate Finance Reporting System
 
 An end-to-end automated financial reporting pipeline built using **Python**, **MySQL**, **Machine Learning**, **Streamlit**, and **Excel Automation**.
 
