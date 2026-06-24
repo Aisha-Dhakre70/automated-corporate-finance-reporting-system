@@ -78,7 +78,9 @@ automated-corporate-financial-reporting-system
 │
 ├── app.py
 │
+├── AUTOMATION_SETUP.txt
 ├── requirements.txt
+├── LICENSE
 └── README.md
 ```
 
