@@ -19,10 +19,10 @@ def show_overview():
     col1, col2 = st.columns(2)
 
     with col1:
-        st.plotly_chart(px.line(df, x="date", y="revenue", color="company"), use_container_width=True)
+        st.plotly_chart(px.line(df, x="date", y="revenue", color="company", labels={"date": "Date", "revenue": "Revenue"}), use_container_width=True)
 
     with col2:
-        st.plotly_chart(px.line(df, x="date", y="net_profit", color="company"), use_container_width=True)
+        st.plotly_chart(px.line(df, x="date", y="net_profit", color="company", labels={"date": "Date", "net_profit": "Net Profit"}), use_container_width=True)
 
     # Breakdown
     st.subheader("📊 Breakdown")
@@ -30,16 +30,16 @@ def show_overview():
 
     with col1:
         cat = df.groupby("category")["revenue"].sum().reset_index()
-        st.plotly_chart(px.bar(cat, x="category", y="revenue"), use_container_width=True)
+        st.plotly_chart(px.bar(cat, x="category", y="revenue", labels={"category": "Category", "revenue": "Revenue"}), use_container_width=True)
 
     with col2:
         reg = df.groupby("region")["net_profit"].sum().reset_index()
-        st.plotly_chart(px.bar(reg, x="region", y="net_profit"), use_container_width=True)
+        st.plotly_chart(px.bar(reg, x="region", y="net_profit", labels={"region": "Region", "net_profit": "Net Profit"}), use_container_width=True)
 
     # Company
     st.subheader("🏢 Company Comparison")
     comp = df.groupby("company")["revenue"].sum().reset_index()
-    st.plotly_chart(px.bar(comp, x="company", y="revenue"), use_container_width=True)
+    st.plotly_chart(px.bar(comp, x="company", y="revenue", labels={"company": "Company", "revenue": "Revenue"}), use_container_width=True)
 
     # Anomalies
     st.subheader("⚠️ Anomalies")
