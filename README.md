@@ -88,8 +88,64 @@ automated-corporate-financial-reporting-system
 | Logging          | Python Logging         |
 | Version Control  | Git & GitHub           |
 
+---
 
+## Dataset
 
+The project uses a synthetic financial dataset representing transactions from multiple companies.
+
+#### Features
+- Date
+- Company
+- Revenue
+- Expenses
+- COGS
+- Gross Profit
+- Operating Profit
+- Net Profit
+- Category
+- Region
+
+#### Sample categories:
+- Marketing
+- Operations
+- HR
+- IT
+
+#### Regions:
+- North
+- South
+- East
+- West
+
+---
+
+## ETL Pipeline
+
+#### 1. Extract
+- Reads incremental records from MySQL
+- Uses metadata tracking
+- Prevents duplicate processing
+
+#### 2. Validate
+Performs:
+- Missing value detection
+- Duplicate removal
+- Invalid value checks
+- Data quality validation
+
+#### 3. Transform
+Creates engineered features including:
+- Profit
+- Gross Profit
+- Operating Profit
+- Net Profit
+- Profit Margin
+- Month
+- Year
+
+#### 4. Load
+Stores processed data inside: `data/processed/`
 
 
 
