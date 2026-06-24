@@ -1,6 +1,6 @@
 # 📊 Automated Corporate Finance Reporting System
 
-An end-to-end automated financial reporting pipeline built using **Python**, **MySQL**, **Machine Learning**, **Streamlit**, and **Excel Automation**.
+An end-to-end automated financial reporting pipeline built using **Python**, **MySQL**, **Streamlit**, and **Excel Automation**.
 
 This project simulates a real-world corporate finance reporting workflow by automating data extraction, validation, transformation, analysis, anomaly detection, report generation, and dashboard visualization.
 
