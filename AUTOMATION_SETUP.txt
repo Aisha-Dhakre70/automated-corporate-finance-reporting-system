@@ -1,0 +1,104 @@
+AUTOMATION_SETUP.txt
+
+Windows Task Scheduler Configuration
+-----------------------------------
+
+This project supports automated execution using Windows Task Scheduler.
+The scheduler periodically executes:
+
+automation/run_pipeline.bat
+
+which automatically runs the ETL pipeline, KPI analysis,
+anomaly detection, and report generation modules.
+
+--------------------------------------------------
+STEPS TO CONFIGURE AUTOMATION
+--------------------------------------------------
+
+1. Open Windows Task Scheduler
+
+   - Press Windows + S
+   - Search for "Task Scheduler"
+   - Open the application
+
+--------------------------------------------------
+
+2. Create a New Task
+
+   - Click "Create Basic Task"
+
+--------------------------------------------------
+
+3. Enter Task Details
+
+Task Name:
+
+ACFRS Automation
+
+Description:
+
+Automated execution of ETL pipeline and financial reporting system.
+
+--------------------------------------------------
+
+4. Select Trigger
+
+Choose when the automation should run:
+
+- Daily
+- Weekly
+- Monthly
+
+Recommended:
+
+Daily at a fixed time.
+
+--------------------------------------------------
+
+5. Select Action
+
+Choose:
+
+Start a Program
+
+--------------------------------------------------
+
+6. Browse Batch File
+
+Browse and select:
+
+automation/run_pipeline.bat
+
+Click Next.
+
+--------------------------------------------------
+
+7. Finish Configuration
+
+Review task details and click:
+
+Finish
+
+--------------------------------------------------
+
+8. Verify Automation
+
+After scheduled execution:
+
+- Database tables should update automatically
+- Excel reports should generate automatically
+- Logs should refresh automatically
+- Dashboard should display latest processed data
+
+--------------------------------------------------
+
+NOTES
+--------------------------------------------------
+
+- Ensure Python and MySQL services are running.
+- Do not change project folder locations after scheduling.
+- Test the batch file manually before automation setup.
+- The scheduler must have permission to access project files.
+
+--------------------------------------------------
+END OF FILE
