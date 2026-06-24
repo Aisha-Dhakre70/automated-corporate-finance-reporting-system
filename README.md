@@ -1,58 +1,100 @@
-# Automated Corporate Finance Reporting System
-This end-to-end system automatically collects financial data (sales, expenses, transactions), processes it, and generates structured reports and dashboards for decision-making. In real life, companies use such systems to reduce manual Excel work, ensure accuracy, and enable finance teams and executives to make faster, data-driven decisions.
+# 📊 Automated Corporate Financial Reporting System
+
+An end-to-end automated financial reporting pipeline built using **Python**, **MySQL**, **Machine Learning**, **Streamlit**, and **Excel Automation**.
+
+This project simulates a real-world corporate finance reporting workflow by automating data extraction, validation, transformation, analysis, anomaly detection, forecasting, report generation, and dashboard visualization.
 
 ---
 
-## Dataset
+## 🚀 Features
 
-The dataset was generated using `generate dataset/generate_data.py` and saved inside `data/raw/` as a CSV file. Seasonalities and anomalies are added for realism.
-
-Key features included in the dataset are:
-- comapny
-- date
-- revenue
-- expense
-- cogs
-- gross_profit
-- operation_profit
-- net_profit
-- category (Marketing, Operations, HR, IT)
-- region (East, West, North, South)
+- Automated ETL Pipeline
+- Incremental Data Extraction
+- Data Validation & Quality Checks
+- Feature Engineering
+- Financial KPI Analysis
+- Anomaly Detection
+- Automated Excel Report Generation
+- Business Insight Generation
+- Interactive Streamlit Dashboard
+- Windows Task Scheduler Automation
+- Logging System
+- Metadata Tracking for Incremental Processing
 
 ---
 
-## Setup for Automation
+## Project Workflow
 
-### Step 1: Create Batch File
-Create the file: `automation/run_pipeline.bat`
+```
 
-### Step 2: Create Scheduled Task
-- Open Task Scheduler
-- Click Create Basic Task
-- Name: Finance Reporting Pipeline
-- Trigger:
-  - Daily / Weekly (recommended: Daily)
+    Raw Dataset
+        ↓
+   MySQL Database
+        ↓
+Extract (Incremental)
+        ↓
+    Validate
+        ↓
+    Transform
+        ↓
+   Analyze KPIs
+        ↓
+ Anomaly Detection
+        ↓
+ Generate Insights
+        ↓
+   Excel Report
+        ↓
+Streamlit Dashboard
 
-### Step 3: Configure Action
-- Action: Start a Program
-- Program/script: `C:\path\to\your\project\automation\run_pipeline.bat`
+```
+---
 
-### Step 4: Advanced Settings
-After creating the task:
-- Right-click → Properties
+## Project Structure
 
-✅ General Tab\
-Enable: Run whether user is logged in or not
+```
+automated-corporate-financial-reporting-system
+│
+├── automation/
+├── config/
+├── dashboard/
+├── data/
+├── database/
+├── generate_dataset/
+├── logs/
+├── metadata/
+├── notebooks/
+├── pipeline/
+├── reporting/
+├── reports/
+├── utils/
+│
+├── requirements.txt
+└── README.md
+```
 
-✅ Triggers Tab\
-Edit trigger → enable:\
-Repeat task every (optional)
+---
 
-✅ Conditions Tab\
-Enable:
-- Wake the computer to run this task
+## Technologies Used
 
-✅ Settings Tab\
-Enable:
-- Run task as soon as possible after a scheduled start is missed
-- If task fails, restart every (e.g., 5 minutes)
+| Category         | Tools                  |
+|------------------|------------------------|
+| Programming      | Python                 |
+| Database         | MySQL                  |
+| Data Processing  | Pandas, NumPy          |
+| Visualization    | Plotly, Streamlit      |
+| Reporting        | OpenPyXL               |
+| Automation       | Windows Task Scheduler |
+| Logging          | Python Logging         |
+| Version Control  | Git & GitHub           |
+
+
+
+
+
+
+
+
+
+
+
