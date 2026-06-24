@@ -30,7 +30,7 @@ This project automates the complete reporting workflow by integrating ETL proces
 
 ---
 
-## Project Workflow
+## 🏗️ Project Workflow
 
 ```
 
@@ -57,7 +57,7 @@ Streamlit Dashboard
 ```
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 automated-corporate-financial-reporting-system
@@ -84,7 +84,7 @@ automated-corporate-financial-reporting-system
 
 ---
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 | Category         | Tools                  |
 |------------------|------------------------|
@@ -99,7 +99,7 @@ automated-corporate-financial-reporting-system
 
 ---
 
-## Dataset
+## 📂 Dataset
 
 The project uses a synthetic financial dataset representing transactions from multiple companies.
 
@@ -129,7 +129,7 @@ The project uses a synthetic financial dataset representing transactions from mu
 
 ---
 
-## ETL Pipeline
+## ⚙️ ETL Pipeline
 
 #### 1. Extract
 - Reads incremental records from MySQL
@@ -254,7 +254,7 @@ This enables finance teams to quickly identify potentially problematic transacti
 
 ---
 
-## Anomaly Detection
+## 🚨 Anomaly Detection
 
 The pipeline identifies abnormal financial transactions using statistical techniques to detect:
 - Expense spikes
@@ -263,7 +263,7 @@ The pipeline identifies abnormal financial transactions using statistical techni
 
 ---
 
-## Reporting
+## 📑 Reporting
 
 Automatically generates Excel reports containing:
 - KPIs
@@ -277,7 +277,7 @@ Generated reports are stored inside: `reports/`
 
 ---
 
-## Dashboard
+## 📊 Dashboard
 
 The project includes a multipage Streamlit dashboard.
 
@@ -296,7 +296,7 @@ The dashboard provides:
 
 ---
 
-## Automation
+## 🤖 Automation
 
 The entire pipeline can be automated using:
 - Windows Task Scheduler
@@ -309,7 +309,7 @@ Files:
 
 ---
 
-## Logging
+## 📝 Logging
 
 All pipeline activities are logged. \
 
@@ -324,7 +324,15 @@ Logs are stored inside: `logs/pipeline.log`
 
 ---
 
-## How to Run
+## 📸 Dashboard Preview
+
+<img width="1836" height="898" alt="image" src="https://github.com/user-attachments/assets/465eab34-a7c2-40d9-bcf0-6e067d3990ef" />
+
+<img width="1810" height="775" alt="image" src="https://github.com/user-attachments/assets/50ff8a30-6beb-4cb2-8842-4935c34832d3" />
+
+---
+
+## ▶️ How to Run
 
 #### Clone the repository
 
@@ -369,7 +377,7 @@ streamlit run app.py
 
 ---
 
-## Future Improvements
+## 🔮 Future Improvements
 - Docker support
 - Cloud database integration
 - Airflow orchestration
@@ -382,7 +390,7 @@ streamlit run app.py
 
 ---
 
-## Skills Demonstrated
+## 💼 Skills Demonstrated
 
 - ETL Pipeline Development
 - Data Engineering
