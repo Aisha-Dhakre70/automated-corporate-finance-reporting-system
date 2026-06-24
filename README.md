@@ -304,14 +304,15 @@ The entire pipeline can be automated using:
 
 Files:
 
-`automation/run_pipeline.bat` \
+`automation/run_pipeline.bat`
+
 `AUTOMATION_SETUP.txt`
 
 ---
 
 ## 📝 Logging
 
-All pipeline activities are logged. \
+All pipeline activities are logged. 
 
 Example log information:
 - Pipeline started
